@@ -1,6 +1,12 @@
 # Socket Stream to Event
 
-get stream data and parse splitting messages by byte or byte sequence and callback event
+get stream data and parse splitting messages by byte or byte sequence and callback event.
+
+Resolve this problems: 
+* How can I separate messages socket?
+* Socket split messages.
+* TCP/IP split messages.
+* FIX TCP split bug.
 
 
 # Exemple
