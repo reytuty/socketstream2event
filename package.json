@@ -1,7 +1,7 @@
 {
   "name": "socketstream2event",
   "version": "1.0.0",
-  "description": "get stream data and parse splitting messages by byte or byte sequence and callback event.",
+  "description": "Get stream data and parse splitting messages by byte or byte sequence and callback event.",
   "main": "stream2event.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/reytuty/socketstream2event.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "socket",
+    "split socket message",
+    "tcp/ip",
+    "stream messages to event"
+  ],
+  "author": "Renato Miawaki",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/reytuty/socketstream2event/issues"
