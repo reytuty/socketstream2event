@@ -78,6 +78,7 @@ class Stream2event{
     /**
      * Call every stream data recived
      * @param {*} data 
+     * @return {array} array of data
      */
     parseData(data){
         let arrayData = this._doParse(data) ;
@@ -86,6 +87,7 @@ class Stream2event{
                 this._dispatchMessages( d ) ;
             })
         }
+        return arrayData ;
     }
     addOnData(e){
         if(typeof e === "function"){
