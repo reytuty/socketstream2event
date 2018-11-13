@@ -2,7 +2,7 @@
  * @author Renato Miawaki
  * @email renato.miawaki@gmail.com 
  * @date Nov/2018
- * @version 1.0.1
+ * @version 1.0.4
  * 
  * To cache socket bytes and verify when it ends
  */
@@ -34,7 +34,7 @@ class Stream2event{
     }
     
     _checkIsEndFromArray(i){
-        if(i==this._bytesSeparetor[lastIndexByte++]){
+        if(i==this._bytesSeparetor[this._lastIndexByte++]){
             if( this._lastIndexByte >= this._bytesSeparetor.length ){
                 //it was the last byte
                 return true ;

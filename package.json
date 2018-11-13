@@ -1,6 +1,6 @@
 {
   "name": "socketstream2event",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get stream data and parse splitting messages by byte or byte sequence and callback event.",
   "main": "stream2event.js",
   "scripts": {
