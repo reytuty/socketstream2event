@@ -4,6 +4,12 @@
  * @date Nov/2018
  * @version 1.0.4
  * 
+ * @author Renato Miawaki
+ * @email renato.miawaki@gmail.com 
+ * @date Jul/2019
+ * @version 1.1.0
+ * 
+ * 
  * To cache socket bytes and verify when it ends
  */
 
