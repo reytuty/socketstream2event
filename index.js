@@ -48,12 +48,12 @@ class Stream2event{
      * dispatch data
      * @param {*} data 
      */
-    _dispatchMessages (data){
+    _dispatchMessages (data, objRef = null){
         if(!this._dataListeners || this._dataListeners.length < 1){
             return ;
         }
         this._dataListeners.forEach((listener)=>{
-            listener(data);
+            listener(data, objRef);
         }) ;
     }
     /**
@@ -80,11 +80,11 @@ class Stream2event{
      * @param {*} data 
      * @return {array} array of data
      */
-    parseData(data){
+    parseData(data, objRef = null ){
         let arrayData = this._doParse(data) ;
         if(arrayData && arrayData.length > 0){
             arrayData.forEach((d)=>{
-                this._dispatchMessages( d ) ;
+                this._dispatchMessages( d, objRef ) ;
             })
         }
         return arrayData ;
